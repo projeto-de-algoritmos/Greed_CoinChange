@@ -51,14 +51,13 @@ void troco(NOTA *notas, MOEDA *moedas, int inteiro, int decimal) {
           notas[i].quantidade = notas[i].quantidade - 1;
         }
 
-        //aux = inteiro/notas[i];
         if (aux) {
             printf("%d notas de %d reais\n", aux, notas[i].valor);
         } else {
             // Nothing to do.
         }
+        //Reinicia o aux para a proxima iteracao
         aux = 0;
-        //inteiro = inteiro % notas[i];
     }
 
     if (inteiro != 0) {
@@ -76,8 +75,6 @@ void troco(NOTA *notas, MOEDA *moedas, int inteiro, int decimal) {
         moedas[i].quantidade = moedas[i].quantidade - 1;
       }
 
-      //aux = decimal/moedas[i];
-      //decimal = decimal % moedas[i];
       if (aux) {
         if (i == 0) {
           printf("%d moedas de 1 REAL\n", aux);
@@ -134,7 +131,7 @@ int main() {
     do {
         menu(notas, moedas);
 
-        printf("Insira o valor da compra: Ex:(00.00)\n");
+        printf("Insira o valor da compra: Ex:(00.00) ou digite 0 para encerrar o programa\n");
         scanf("%f", &valor_compra);
         if (valor_compra) {
             printf("Insira o valor pago: Ex:(00.00)\n");
