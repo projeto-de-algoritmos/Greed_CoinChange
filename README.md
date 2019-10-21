@@ -14,11 +14,11 @@ O objetivo deste projeto é retornar a quantidade de notas e moedas necessárias
 
 ## Screenshots
 
-![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/troquinnho.png)
+![Imagem com troco pequeno](https://github.com/projeto-de-algoritmos/Greed_CoinChange/blob/master/imagens/troquinho.png)
 
-![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/trocão.png)
+![Imagem com troco grande](https://github.com/projeto-de-algoritmos/Greed_CoinChange/blob/master/imagens/trocão.png)
 
-![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/insuficiencia.png)
+![Imagem com troco insuficiente](https://github.com/projeto-de-algoritmos/Greed_CoinChange/blob/master/imagens/insuficiencia.png)
 
 ## Instalação
 **Linguagem**: C<br>
