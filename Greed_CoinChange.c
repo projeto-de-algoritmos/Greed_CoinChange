@@ -24,10 +24,15 @@ void menu(NOTA *notas, MOEDA *moedas) {
 
     printf("Notas:\n");
     for (int i = 0; i < MAX_NOTAS; i++) {
-        printf("%d notas de %d, ", notas[i].quantidade,notas[i].valor);
+        printf("%d notas de %d", notas[i].quantidade,notas[i].valor);
+	if (i != MAX_NOTAS - 1) {
+		printf(", ");
+	} else {
+		printf(".\n");
+	}
     }
 
-    printf("\nMoedas:\n");
+    printf("Moedas:\n");
     for (int i = 0; i < MAX_MOEDAS; i++) {
         if(i == 0) {
             printf("%d moedas de 1 REAL, ", moedas[i].quantidade);
@@ -37,6 +42,7 @@ void menu(NOTA *notas, MOEDA *moedas) {
             printf("e %d moedas de 1 centavo.\n", moedas[i].quantidade);
         }
     }
+    printf("\n");
 }
 
 void troco(NOTA *notas, MOEDA *moedas, int inteiro, int decimal) {

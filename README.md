@@ -13,7 +13,12 @@
 O objetivo deste projeto é retornar a quantidade de notas e moedas necessárias para o troco a partir de um valor pago e da disponibilidade do caixa, gerado automaticamente a cada execucao do programa.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/troquinnho.png)
+
+![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/trocão.png)
+
+![Grafo modelado](https://github.com/projeto-de-algoritmos/Greed-CoinChange/blob/master/imagens/insuficiencia.png)
 
 ## Instalação
 **Linguagem**: C<br>
