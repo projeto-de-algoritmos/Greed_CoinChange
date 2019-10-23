@@ -18,6 +18,7 @@ typedef struct moedas{
   int quantidade;
 } MOEDA;
 
+// ponteiros NOTA *notas e MOEDA *moedas são usados para que a função altere os valores de fato (return dispensável)
 void menu(NOTA *notas, MOEDA *moedas) {
     printf("\n\tSistema de troco:\n\n");
     printf("Para o troco, temos as seguintes notas e moedas:\n");
@@ -57,22 +58,21 @@ void troco(NOTA *notas, MOEDA *moedas, int inteiro, int decimal) {
           notas[i].quantidade = notas[i].quantidade - 1;
         }
 
-        if (aux) {
+        if (aux) 
             printf("%d notas de %d reais\n", aux, notas[i].valor);
-        } else {
-            // Nothing to do.
-        }
+
         //Reinicia o aux para a proxima iteracao
         aux = 0;
     }
 
-    if (inteiro != 0) {
+    if (inteiro) {
         aux = inteiro / 1;
         decimal += aux * 100;
         inteiro = 0;
     }
 
     printf("\n");
+
     for (int i = 0; i < MAX_MOEDAS; i++) {
       aux = 0;
       while(decimal - moedas[i].valor >= 0 && moedas[i].quantidade > 0){
